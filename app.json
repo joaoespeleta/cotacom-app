@@ -1,5 +1,19 @@
 {
   "android": {
     "package": "com.anonymous.cotacom"
+  },
+  "ios": {
+    "bundleIdentifier": "com.anonymous.cotacom"
+  },
+  "web": {
+    "favicon": "./assets/img/logo_cotacom.png"
+  },
+  "expo":{
+    "name": "COTACOM",
+    "slug": "cotacom",
+    "version": "1.0.0"
+  },
+  "experiments":{
+    "new_architecture": true
   }
 }

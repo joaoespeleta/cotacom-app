@@ -4,9 +4,10 @@ import { View, Text, TextInput, Button, StyleSheet, Image } from "react-native";
 export default function Home({ navigation }) {
   const [symbol, setSymbol] = useState("");
 
+  
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Consulte informações sobre sua ação:
+      <Text style={styles.title}>Consulte detalhes da sua ação:
       </Text>
 
       <TextInput
@@ -18,7 +19,7 @@ export default function Home({ navigation }) {
 
       <Button
         title="Buscar"
-        onPress={() => navigation.navigate("Details", { symbol })}
+        onPress={() => navigation.navigate("Detalhes", { symbol })}
       />
 
       <Image

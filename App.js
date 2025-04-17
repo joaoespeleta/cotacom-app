@@ -17,8 +17,8 @@ export default function App() {
           },
         }}
       >
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="COTACOM" component={Home} />
+        <Stack.Screen name="Detalhes" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
   );

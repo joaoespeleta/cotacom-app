@@ -49,13 +49,16 @@ export default function Details({ route }) {
       ? variacao.toFixed(2)
       : Number(variacao || 0).toFixed(2);
 
+   const corVariacao = Number(variacaoFormatada) >= 0 ? "#28a745" : "#dc3545"; //verificar a variação e definir a cor
+
   return (
+    
     <View style={styles.container}>
       {isSvg && svgXmlData ? (
   <SvgXml xml={svgXmlData} style={{ width: 100, height: 100 }} />
 ) : data?.logourl ? (
   <Image
-    source={{ uri: data.logourl }} // 👈 ESSENCIAL!
+    source={{ uri: data.logourl }} 
     style={styles.logoRemote}
     resizeMode="contain"
   />
@@ -65,7 +68,11 @@ export default function Details({ route }) {
       <Text style={styles.title}>{data?.longName ?? "Nome indisponível"}</Text>
       <Text>Símbolo: {data?.symbol ?? "N/A"}</Text>
       <Text>Preço: R$ {precoFormatado}</Text>
-      <Text>Variação: {variacaoFormatada} %</Text>
+      <Text style={{ color: corVariacao, fontWeight: "bold" }}>
+  Variação: {variacaoFormatada} %
+</Text>
+
+
 
       <Image
         source={require("../../assets/img/logo_cotacom.png")}
@@ -90,7 +97,7 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
   text: {
-    fontSize: 18,
+    fontSize: 22,
     color: "#333",
     marginBottom: 5
   },
@@ -100,11 +107,12 @@ const styles = StyleSheet.create({
     color: "#28a745"
   },
   logo: {
-    width: 100,
+    width: 250,
     height: 100,
-    marginTop: 50
+    marginTop: 50,
+    resizeMode: "contain"
   }, logoRemote: {
-    width: 100,
+    width: 40,
     height: 100,
     marginBottom: 20
   }
