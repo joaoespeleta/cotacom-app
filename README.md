@@ -8,10 +8,10 @@ Cotacom é um aplicativo mobile desenvolvido em **React Native** que permite con
 ## 🖼️ Capturas de Tela
 
 ### Página Inicial
-![Home](./assets/img/Home.jpg)
+![Home](assets/img/Home.jpg)
 
 ### Página de Detalhes
-![Detalhes](./assets/img/Detalhes.jpg)
+![Detalhes](assets/img/Detalhes.jpg)
 
 ---
 
