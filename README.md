@@ -1,6 +1,9 @@
 
 # 📈 Cotacom App
 
+
+![Logo Cotacom](assets/img/logo_cotacom.png)
+
 Cotacom é um aplicativo mobile desenvolvido em **React Native** que permite consultar a cotação e variação de ações da bolsa brasileira (B3). Basta inserir o código de uma ação, como `PETR4` ou `BBAS3`, para visualizar as informações em tempo real.
 
 ---
@@ -8,10 +11,10 @@ Cotacom é um aplicativo mobile desenvolvido em **React Native** que permite con
 ## 🖼️ Capturas de Tela
 
 ### Página Inicial
-![Home](assets/img/Home.jpg)
+<img src="assets/img/Home.jpg" width="300" />
 
 ### Página de Detalhes
-![Detalhes](assets/img/Detalhes.jpg)
+<img src="assets/img/Detalhes.jpg" width="300" />
 
 ---
 
